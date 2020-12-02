@@ -1,0 +1,77 @@
+.blog__list {
+	.col {
+		width: calc(100% / 3);
+	}
+}
+.blog__item {
+}
+.blog__img {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 1.5rem;
+	img {
+		width: 100%;
+		height: auto;
+		transition: $t1 $cubic1;
+	}
+	&:after {
+		content: 'Xem Thêm';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		color: $text-white-cl;
+		font-size: 2rem;
+		pointer-events: none;
+		transition: $t1 $cubic1;
+		background-color: rgba($color: $bg-black-cl, $alpha: 0.16);
+		@include hidden;
+		@include mid-flex;
+	}
+
+	&:hover {
+		&:after {
+			@include visible;
+		}
+		img {
+			transform: scale(1.1);
+			filter: blur(2px);
+		}
+	}
+}
+.blog__date {
+	margin-bottom: 1rem;
+	font-size: 1.4rem;
+	a {
+		display: inline-block;
+	}
+	b {
+		margin-left: 2.5rem;
+		color: $main-cl;
+		text-transform: uppercase;
+	}
+}
+.blog__content {
+	.main-title {
+		margin-bottom: 1.5rem;
+		color: $text-black-cl;
+		&:hover {
+			color: $main-cl;
+		}
+	}
+}
+@include max-media(768px) {
+	.blog__list {
+		.col {
+			width: 50%;
+		}
+	}
+}
+@include max-media(500px) {
+	.blog__list {
+		.col {
+			width: 100%;
+		}
+	}
+}

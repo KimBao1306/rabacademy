@@ -1,0 +1,36 @@
+.tabs {
+	display: flex;
+	background-color: $third-cl;
+	border-radius: 99rem;
+	padding: 0.3rem 0.4rem;
+	li {
+		position: relative;
+		transition: $t1;
+		padding: 1rem 5rem;
+		border-radius: 99rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 1.8rem;
+		&:hover {
+			background-color: $main-cl;
+			color: $text-white-cl;
+		}
+	}
+	li.--active {
+		color: $text-white-cl;
+		background-color: $main-cl;
+		.main-title {
+			color: $main-cl;
+		}
+	}
+}
+.tab-link {
+	cursor: pointer;
+}
+.tab-content {
+	display: none;
+	&.--active {
+		display: block;
+		animation: fadeInUp $t2 forwards;
+	}
+}

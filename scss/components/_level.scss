@@ -1,0 +1,46 @@
+.lv {
+}
+.lv__list {
+	.col {
+		width: calc(100% / 3);
+	}
+}
+.lv__list-item {
+}
+.lv__img {
+	margin-bottom: 2rem;
+	overflow: hidden;
+	img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		transition: $t1 $cubic1;
+		transform: scale(1.2);
+		&:hover {
+			filter: blur(5px);
+			transform: scale(1);
+		}
+	}
+}
+.lv__desc {
+	.main-title {
+		margin-bottom: 1.5rem;
+		a {
+			color: $text-black-cl;
+			transition: $t1 ease;
+			&:hover {
+				color: $main-cl;
+			}
+		}
+	}
+	.desc {
+		@include lh(28, 16);
+	}
+}
+@include max-media(500px) {
+	.lv__list {
+		.col {
+			width: 50%;
+		}
+	}
+}

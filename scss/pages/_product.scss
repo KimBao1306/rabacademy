@@ -1,0 +1,87 @@
+.main-pd {
+}
+.pd {
+	position: relative;
+	padding-bottom: 10rem;
+	background-color: $third-cl;
+}
+/** PRODUCT 01 */
+.pd-1 {
+	.mission {
+		padding-top: 0;
+	}
+	.mission__item:last-child {
+		.mission__img {
+			&:before {
+				display: block;
+			}
+		}
+	}
+}
+@include max-media(768px) {
+	.pd {
+		padding-bottom: 6rem;
+	}
+}
+@include max-media(500px) {
+	.pd {
+		padding-bottom: 4rem;
+	}
+}
+/** PRODUCT 02 */
+.pd-2 {
+}
+/** PRODUCT 03 */
+.pd-3 {
+	.mission {
+		padding-top: 0;
+	}
+	.logo-border {
+		margin-top: 8rem;
+	}
+}
+@include max-media(500px) {
+	.pd-3 {
+		.logo-border {
+			margin-top: 4rem;
+		}
+	}
+}
+/** PRODUCT 04 */
+.pd-4 {
+	.mission {
+		padding-top: 0;
+	}
+	.mission__item:last-child {
+		.mission__img {
+			&:before {
+				display: block;
+			}
+		}
+	}
+}
+@include max-media(768px) {
+}
+/** PRODUCT 05 */
+.pd-5 {
+	.course {
+		padding-bottom: 4rem;
+	}
+	.course-fm__wrap {
+		.cols {
+			align-items: center;
+		}
+	}
+	.mission {
+		background-color: $third-cl;
+	}
+}
+/** PRODUCT 06 */
+.pd-6 {
+	.course {
+		padding-bottom: 4rem;
+	}
+	.mission {
+		background-color: $third-cl;
+	}
+}

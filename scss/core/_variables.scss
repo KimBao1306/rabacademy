@@ -1,0 +1,36 @@
+/*primary colors*/
+$white-cl: #fff;
+$black-cl: #000000;
+$gray-cl: #898989;
+/*primary text colors*/
+$text-white-cl: #fff;
+$text-black-cl: #1d1d1d;
+$text-gray-cl: #91a5ac;
+/*primary bg colors*/
+$bg-white-cl: #fff;
+$bg-black-cl: #1d1d1d;
+$bg-gray-cl: #91a5ac;
+/*main color design*/
+$main-cl: #923c19;
+$second-cl: #fff;
+$third-cl: #f8f8f8;
+$four-cl: #e8d4b8;
+$border-cl: #e1e1e1;
+/*time transition*/
+$t1: 0.3s;
+$t2: 0.6s;
+$t3: 1s;
+$cubic1: cubic-bezier(0.61, 0.22, 0.23, 1);
+$cubic2: cubic-bezier(0.63, -0.02, 0.24, 1.12);
+/*font families*/
+$fz-base: 10px;
+$font-body: 'Open_Sans', sans-serif;
+$fz-body: 1.6rem;
+$lh-body: 1.5;
+$cl-body: #000000;
+$font-title: 'Open_Sans', sans-serif;
+/*width*/
+$w-scroll: 0px;
+$max-width: 1920px;
+$container-width: 1200px;
+$padding: 15px;

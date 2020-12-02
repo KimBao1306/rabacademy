@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_199" data-name="Rectangle 199" width="30" height="30" transform="translate(1175 966)" fill="#923c19" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="time-icon" transform="translate(-1175 -966)" clip-path="url(#clip-path)">
+    <path id="stopwatch_1_" data-name="stopwatch(1)" d="M22.434,9.221,23.61,8.045A1.17,1.17,0,1,0,21.955,6.39L20.779,7.566A12.559,12.559,0,0,0,13.849,4.7V2.341h1.131a1.17,1.17,0,0,0,0-2.341h-4.6a1.17,1.17,0,0,0,0,2.341h1.131V4.7A12.678,12.678,0,1,0,22.434,9.221ZM12.679,27.659A10.338,10.338,0,1,1,23.017,17.321,10.35,10.35,0,0,1,12.679,27.659ZM18.1,11.9a1.17,1.17,0,0,1,0,1.655l-4.6,4.6a1.17,1.17,0,0,1-1.655-1.655l4.6-4.6A1.17,1.17,0,0,1,18.1,11.9Zm0,0" transform="translate(1177.321 966)" fill="#923c19"/>
+  </g>
+</svg>

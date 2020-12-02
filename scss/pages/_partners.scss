@@ -1,0 +1,115 @@
+.main-partners {
+}
+.partners {
+	background: $third-cl;
+	.main-title-wrap + p {
+		text-transform: uppercase;
+	}
+}
+.study {
+	.col {
+		width: 50%;
+	}
+	&__img {
+		position: relative;
+		margin-bottom: 3rem;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: auto;
+			transition: $t1 $cubic1;
+		}
+		&:after {
+			content: 'Xem Thêm';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			color: $text-white-cl;
+			font-size: 2rem;
+			pointer-events: none;
+			transition: $t1 $cubic1;
+			background-color: rgba($color: $bg-black-cl, $alpha: 0.16);
+			@include hidden;
+			@include mid-flex;
+		}
+
+		&:hover {
+			&:after {
+				@include visible;
+			}
+			img {
+				transform: scale(1.1);
+				filter: blur(2px);
+			}
+		}
+	}
+	&__content {
+		p {
+			margin-bottom: 3rem;
+		}
+	}
+	@include max-media(500px) {
+		.col {
+			width: 100%;
+		}
+	}
+}
+/** POPUP */
+.popup-wrap {
+	display: none;
+}
+.popup {
+	position: relative;
+	margin: auto;
+	width: 600px;
+	max-width: 100%;
+	background-color: $white-cl;
+	&__img {
+		width: 100%;
+		height: 100%;
+		img {
+			width: inherit;
+			height: inherit;
+			object-fit: cover;
+		}
+	}
+	&__content {
+		> div {
+			width: 100%;
+		}
+	}
+	.bottom {
+		padding: 15px;
+	}
+	.f-group {
+		margin-bottom: 20px;
+	}
+	label {
+		display: inline-block;
+		margin-bottom: 5px;
+	}
+	input {
+		border-radius: 5px;
+		&::placeholder {
+			color: rgba($color: $black-cl, $alpha: 0.6);
+		}
+	}
+	button {
+		border: none;
+	}
+	.mfp-close {
+		display: none;
+	}
+}
+.close-popup-btn {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	z-index: 1;
+	@include mid-flex;
+}
